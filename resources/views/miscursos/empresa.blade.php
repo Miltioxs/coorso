@@ -118,14 +118,12 @@
 			<div class="row course_boxes">
 				<div class="row">
 					<div class="col">
-						@foreach($cursos as $cursos)
+						@foreach($ofertas as $ofertas)
 							
-							{{$cursos->nombreC}}
-							{{$cursos->rango}}
-							{{$cursos->categoria}}
-							{{$cursos->descripcionC}}
-							{{$cursos->estadoC}}
-							<img src="data:image/jpeg;base64,'.base64_encode({{$cursos->estadoC}} ).'"/>
+							{{$ofertas->nombreE}}
+                            {{$ofertas->descripcionP}}
+                            {{$ofertas->nombreU}}
+                            
 						@endforeach
 
 						

@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-use App\respuesta;
 use Illuminate\Support\Facades\DB;
 
-class miscursosController extends Controller
+class empresaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,28 +14,21 @@ class miscursosController extends Controller
      */
     public function index()
     {
-        $cursos=DB::table('caminos')
-                ->where('caminos.id_usuario','2')
+        $ofertas=DB::table('ofertas')
+                ->join('aplicacions','aplicacions.id_oferta','ofertas.id_oferta')
+                ->join('usuarios','usuarios.id_usuario','aplicacions.id_usuario')
+                ->where('aplicacions.id_usuario','2')
                 
                 /*->join('rangos', 'rangos.id_rango', '=', 'cursos.id_rango')*/
-                ->join('cursos', 'cursos.id_curso', '=', 'caminos.id_curso')
-                ->join('categorias', 'categorias.id_categoria', '=', 'cursos.id_categoria')
-                ->join('rangos', 'rangos.id_rango', '=', 'cursos.id_rango')
-                ->select('cursos.nombreC','rangos.rango', 'categorias.categoria', 'cursos.descripcionC', 'caminos.estadoC','cursos.imgCurso')
+                ->join('empresas', 'empresas.id_empresa', '=', 'ofertas.id_empresa')
+                /*->join('categorias', 'categorias.id_categoria', '=', 'cursos.id_categoria')
+                ->join('rangos', 'rangos.id_rango', '=', 'cursos.id_rango')*/
+                ->select('empresas.nombreE','ofertas.descripcionP', 'usuarios.nombreU')
                 ->get();
-                return view('miscursos.miscursos',[
-                    'cursos'=>$cursos
-                ]);		
+                return view('miscursos.empresa',[
+                    'ofertas'=>$ofertas
+                ]);	
     }
-
-    /* $cursos=DB::table('cursos')->
-                ->join('categorias', 'categorias.id_categoria', '=', 'cursos.id_categoria')
-                ->join('rangos', 'rangos.id_rango', '=', 'cursos.id_rango')
-                ->select('categorias.categoria', 'rangos.rango', 'cursos.nombreC')
-                ->get();
-                return view('miscursos.miscursos',[
-                    'cursos'=>$cursos
-                ]);*/
 
     /**
      * Show the form for creating a new resource.

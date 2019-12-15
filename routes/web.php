@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 route::resource('/mis_cursos' , 'miscursosController');
+route::resource('/empresa_', 'empresaController');
