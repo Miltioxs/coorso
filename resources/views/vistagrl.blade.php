@@ -33,12 +33,12 @@
                 <nav class="main_nav_container">
                     <div class="main_nav">
                         <ul class="main_nav_list">
-                            <li class="main_nav_item"><a href="index.html">Inicio</a></li>
-                            <li class="main_nav_item"><a href="my_courses.html">Mis cursos</a></li>
-                            <li class="main_nav_item"><a href="courses.html">Cursos</a></li>
-                            <li class="main_nav_item"><a href="#">Buscar</a></li>
+                            <li class="main_nav_item"><a href="{{url('/')}}">Inicio</a></li>
+                            <li class="main_nav_item"><a href="{{url('/miscursos')}}">Mis cursos</a></li>
+                            <li class="main_nav_item"><a href="{{url('/cursos')}}">Cursos</a></li>
+                            <li class="main_nav_item"><a href="{{url('/buscador')}}">Buscar</a></li>
                             
-                            <li class="main_nav_item"><a href="contact.html">Contacto</a></li>
+                            
                         </ul>
                     </div>
                 </nav>

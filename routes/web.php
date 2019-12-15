@@ -37,3 +37,7 @@ route::resource('/applOfertas', 'applOfertasController');
 route::get('/buscador', function(){
     return view('buscar');
 });
+
+route::get('/vistagrl', function(){
+    return view('vistagrl');
+});

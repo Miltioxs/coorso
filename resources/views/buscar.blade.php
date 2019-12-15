@@ -37,12 +37,12 @@
                 <nav class="main_nav_container">
                     <div class="main_nav">
                         <ul class="main_nav_list">
-                            <li class="main_nav_item"><a href="index.html">Inicio</a></li>
+                            <li class="main_nav_item"><a href="{{url('/')}}">Inicio</a></li>
                             <!--li class="main_nav_item"><a href="my_courses.html"></a></li-->
-                            <li class="main_nav_item"><a href="courses.html">Cursos</a></li>
+                            <li class="main_nav_item"><a href="{{url('/cursos')}}">Cursos</a></li>
                             <!--li class="main_nav_item"><a href="elements.html">Texto aqui</a></li-->
                             <!--li class="main_nav_item"><a href="news.html">Texto aqui</a></li-->
-                            <li class="main_nav_item"><a href="contact.html">Contactanos</a></li>
+                           
                         </ul>
                     </div>
                 </nav>
@@ -70,12 +70,12 @@
             <div class="menu_inner menu_mm">
                 <div class="menu menu_mm">
                     <ul class="menu_list menu_mm">
-                        <li class="menu_item menu_mm"><a href="#">Inicio</a></li>
+                        <li class="menu_item menu_mm"><a href="">Inicio</a></li>
 
-                        <li class="menu_item menu_mm"><a href="courses.html">Cursos</a></li>
+                        <li class="menu_item menu_mm"><a href="">Cursos</a></li>
                         <!--li class="menu_item menu_mm"><a href="elements.html"></a></li-->
                         <!--li class="menu_item menu_mm"><a href="news.html">News</a></li-->
-                        <li class="menu_item menu_mm"><a href="contact.html">Contactanos</a></li>
+                        <!--li class="menu_item menu_mm"><a href="contact.html">Contactanos</a></li-->
                     </ul>
 
                     <!-- Menu Social -->
@@ -139,7 +139,7 @@
                         <div class="search_background" style="background-image:url(images/search_background.jpg);"></div>
                         <div class="search_content text-center">
                             <h1 class="search_title">Buscar cursos</h1>
-                            <form id="search_form" class="search_form" action="post">
+                            <form id="search_form" class="search_form" action="{{url('/miscursos')}}">
                                 <input id="search_form_name" class="input_field search_form_name" type="text" placeholder="Nombre del curso" required="required" data-error="Course name is required.">
                                 <input id="search_form_category" class="input_field search_form_category" type="text" placeholder="Categoría">
                                 <input id="search_form_degree" class="input_field search_form_degree" type="text" placeholder="Difucultad">
@@ -238,11 +238,7 @@
             <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
                 <div class="footer_copyright">
                     <span>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                        All Rights Reserverd by Datti</span>
                 </div>
                 <div class="footer_social ml-sm-auto">
                     <ul class="menu_social">
