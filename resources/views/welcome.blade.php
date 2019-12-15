@@ -39,7 +39,7 @@
 						<li class="main_nav_item"><a href="{{url('/cursos')}}">Cursos</a></li>
 						<!--li class="main_nav_item"><a href="elements.html">Texto aqui</a></li-->
 						<!--li class="main_nav_item"><a href="news.html">Texto aqui</a></li-->
-						
+
 					</ul>
 				</div>
 			</nav>
@@ -205,7 +205,7 @@
 						<img src="images/earth-globe.svg" alt="">
 					</div>
 					<h3>Cursos en línea</h3>
-					<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+					<p>Especializados para convivir con el usuario de manera eficaz y amigable.</p>
 				</div>
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
@@ -213,7 +213,7 @@
 						<img src="images/exam.svg" alt="">
 					</div>
 					<h3>Cursos desde tu casa</h3>
-					<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+					<p>Desde la comodidad de tu casa, no necesitas gastar en largos viajes.</p>
 				</div>
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
@@ -221,7 +221,7 @@
 						<img src="images/books.svg" alt="">
 					</div>
 					<h3>Amplia libreria de cursos</h3>
-					<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+					<p>Contamos con muchos cursos de diferentes categorías, adecuados para los empleos más factibles.</p>
 				</div>
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
@@ -229,7 +229,7 @@
 						<img src="images/professor.svg" alt="">
 					</div>
 					<h3>Profesores excepcionales</h3>
-					<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+					<p>Contamos con profesores altamente capacitados cada uno en su área.</p>
 				</div>
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
@@ -237,7 +237,7 @@
 						<img src="images/blackboard.svg" alt="">
 					</div>
 					<h3>Programas grandiosos</h3>
-					<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+					<p>La mejor manera de aprender adecuadas a la categoría que más te guste.</p>
 				</div>
 
 				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
@@ -245,7 +245,7 @@
 						<img src="images/mortarboard.svg" alt="">
 					</div>
 					<h3>Reconocimiento por finalizar cursos</h3>
-					<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+					<p>Te brindamos reconocimiento y recomendaciones hacia las empresas que nos apoyan.</p>
 				</div>
 
 			</div>
