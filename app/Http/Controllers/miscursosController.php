@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\pregunta;
+
 use App\respuesta;
-use App\categoria;
+
 
 class miscursosController extends Controller
 {
@@ -16,7 +16,7 @@ class miscursosController extends Controller
      */
     public function index()
     {
-        $respuesta = App\preguntas::find(1)->repuestas;
+        //$respuesta = App\preguntas::find(1)->repuestas;
         return view('miscursos.miscursos', [
             'respuestas'=> respuesta::all()
 

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class rango extends Model
 {
-    public function curso(){
+    public function cursos(){
         return $this->hasMany(curso::class);
     }
 }
