@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+route::resource('/mis_cursos' , 'miscursosController');
