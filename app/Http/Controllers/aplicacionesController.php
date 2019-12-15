@@ -15,7 +15,7 @@ class aplicacionesController extends Controller
                 ->join('empresas', 'empresas.id_empresa', '=', 'ofertas.id_empresa')
                 ->select('usuarios.nickU', 'empresas.nombreE', 'ofertas.puestoO','ofertas.descripcionP', 'aplicacions.estadoO')
                 ->get();
-                return view('miscursos.misaplicaciones',[
+                return view('misaplicaciones',[
                     'aplicacion'=>$aplicacion
                 ]);	
     }

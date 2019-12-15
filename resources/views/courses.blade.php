@@ -35,7 +35,7 @@
 						<li class="main_nav_item"><a href="{{url('/miscursos')}}">Mis cursos</a></li>
 						<li class="main_nav_item"><a href="{{url('/cursos')}}">Cursos</a></li>
 						<li class="main_nav_item"><a href="vista_gral.html">Lista general</a></li>
-						<li class="main_nav_item"><a href="buscar.html">Buscar</a></li>
+						<li class="main_nav_item"><a href="{{ulr('/buscador')}}">Buscar</a></li>
 						<!--li class="main_nav_item"><a href="elements.html">Elementos</a></li-->
 						<!--li class="main_nav_item"><a href="news.html">news</a></li-->
 						
