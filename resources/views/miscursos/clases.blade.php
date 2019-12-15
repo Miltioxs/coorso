@@ -110,7 +110,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="section_title text-center">
-						<h1>Mis cursos</h1>
+						<h1>Clases</h1>
 					</div>
 				</div>
 			</div>
@@ -118,14 +118,15 @@
 			<div class="row course_boxes">
 				<div class="row">
 					<div class="col">
-						@foreach($cursos as $cursos)
+						@foreach($clases as $clases)
 							
-							{{$cursos->nombreC}}
-							{{$cursos->rango}}
-							{{$cursos->categoria}}
-							{{$cursos->descripcionC}}
-							{{$cursos->estadoC}}
+								
+                           {{$clases->nombreC}}
+                           {{$clases->tituloC}}
+                           {{$clases->nombreU}}
+                           {{$clases->urlRecurso}}
 							
+                            
 						@endforeach
 
 						

@@ -110,7 +110,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="section_title text-center">
-						<h1>Mis cursos</h1>
+						<h1>Cursos</h1>
 					</div>
 				</div>
 			</div>
@@ -120,12 +120,13 @@
 					<div class="col">
 						@foreach($cursos as $cursos)
 							
-							{{$cursos->nombreC}}
+								
+                            {{$cursos->nombreC}}
 							{{$cursos->rango}}
 							{{$cursos->categoria}}
 							{{$cursos->descripcionC}}
-							{{$cursos->estadoC}}
 							
+                            
 						@endforeach
 
 						
