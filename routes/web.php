@@ -41,3 +41,11 @@ route::get('/buscador', function(){
 route::get('/vistagrl', function(){
     return view('vistagrl');
 });
+
+route::get('/Reque', function(){
+    return view('requerimiento');
+});
+
+route::get('/player', function(){
+    return view('player');
+});

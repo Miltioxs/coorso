@@ -33,12 +33,11 @@
                 <nav class="main_nav_container">
                     <div class="main_nav">
                         <ul class="main_nav_list">
-                            <li class="main_nav_item"><a href="index.html">Inicio</a></li>
-                            <li class="main_nav_item"><a href="my_courses.html">Mis cursos</a></li>
-                            <li class="main_nav_item"><a href="courses.html">Cursos</a></li>
-                            <li class="main_nav_item"><a href="buscar.html">Buscar</a></li>
-                            <li class="main_nav_item"><a href="#">Lista general</a></li>
-                            <li class="main_nav_item"><a href="contact.html">Contacto</a></li>
+                            <li class="main_nav_item"><a href="{{url('/')}}">Inicio</a></li>
+                            <li class="main_nav_item"><a href="{{url('/miscursos')}}">Mis cursos</a></li>
+                            <li class="main_nav_item"><a href="{{url('/cursos')}}">Cursos</a></li>
+                            <li class="main_nav_item"><a href="{{url('/buscador')}}">Buscar</a></li>
+                            
                         </ul>
                     </div>
                 </nav>
@@ -236,7 +235,7 @@
                             <p class="footer_column_title">Recursos</p>
                             <p class="footer_column_content">
                                 <ul>
-                                    <li><strong><a href="www.google.com" style="color:#ffb606">PDF del curso</a></strong>/li>
+                                    <li><strong><a href="www.google.com" style="color:#ffb606">PDF del curso</a></strong></li>
                                 </ul>
                             </p>
                         </div>

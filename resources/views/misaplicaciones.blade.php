@@ -31,12 +31,11 @@
 			<nav class="main_nav_container">
 				<div class="main_nav">
 					<ul class="main_nav_list">
-						<li class="main_nav_item"><a href="index.html">Inicio</a></li>
+						<li class="main_nav_item"><a href="{{('/')}}">Inicio</a></li>
 
-						<li class="main_nav_item"><a href="courses.html">Cursos</a></li>
-						<li class="main_nav_item"><a href="ofertas.html">Ofertas laborales</a></li>
-						<!--li class="main_nav_item"><a href="news.html">news</a></li-->
-						<li class="main_nav_item"><a href="contact.html">Contactanos</a></li>
+						<li class="main_nav_item"><a href="{{('/cursos')}}">Cursos</a></li>
+						
+						
 					</ul>
 				</div>
 			</nav>
@@ -133,7 +132,7 @@
 											<div class="card">
 									<img class="card-img-top" src="images/course_1.jpg" alt="https://unsplash.com/@kellybrito">
 									<div class="card-body text-center">
-										<div class="card-title"><a href="courses.html">{{$aplicacion->puestoO}}</a></div><br>
+										<div class="card-title"><a href="{{('/Reque')}}">{{$aplicacion->puestoO}}</a></div><br>
 										<div class="card-text">{{$aplicacion->descripcionP}}</div><p><br>
 									</div>
 									<div class="price_box d-flex flex-row align-items-center">

@@ -34,7 +34,7 @@
 						<li class="main_nav_item"><a href="{{url('/')}}">Inicio</a></li>
 						<li class="main_nav_item"><a href="{{url('/miscursos')}}">Mis cursos</a></li>
 						<li class="main_nav_item"><a href="{{url('/cursos')}}">Cursos</a></li>
-						<li class="main_nav_item"><a href="{{url('/vistagrl')}}">Lista general</a></li>
+						<li class="main_nav_item"><a href="{{url('/misaplicaciones')}}">Aplicaciones</a></li>
 						<li class="main_nav_item"><a href="{{url('/buscador')}}">Buscar</a></li>
 						<!--li class="main_nav_item"><a href="elements.html">Elementos</a></li-->
 						<!--li class="main_nav_item"><a href="news.html">news</a></li-->

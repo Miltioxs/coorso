@@ -36,7 +36,7 @@
 						<li class="main_nav_item"><a href="{{url('/cursos')}}">Cursos</a></li>
 						<li class="main_nav_item"><a href="ofertas.html">Ofertas laborales</a></li>
 						<!--li class="main_nav_item"><a href="news.html">news</a></li-->
-						<li class="main_nav_item"><a href="contact.html">Contactanos</a></li>
+						
 					</ul>
 				</div>
 			</nav>
@@ -133,7 +133,7 @@
 											<div class="card">
 									<img class="card-img-top" src="img/imgCurso.png" alt="https://unsplash.com/@kellybrito">
 									<div class="card-body text-center">
-										<div class="card-title"><a href="courses.html">{{$cursos->nombreC}}</a></div><br>
+										<div class="card-title"><a href="{{'/player'}}">{{$cursos->nombreC}}</a></div><br>
 										<div class="card-text">{{$cursos->descripcionC}}</div><p><br>
 
 											@if($cursos->rango == "Principiante")
