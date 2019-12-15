@@ -13,7 +13,20 @@ class usuarioController extends Controller
      */
     public function index()
     {
-        //
+        $aplication=DB::table('usuarios')
+                ->join('aplicacions','aplicacions.id_usuario','usuarios.id_usuarios')
+                ->join('ofertas','ofertas.id_oferta','aplicacions.id_oferta')
+                ->where('ofertas.id_usuario','2')
+                
+                /*->join('rangos', 'rangos.id_rango', '=', 'cursos.id_rango')*/
+                ->join('empresas', 'empresas.id_empresa', '=', 'ofertas.id_empresa')
+                /*->join('categorias', 'categorias.id_categoria', '=', 'cursos.id_categoria')
+                ->join('rangos', 'rangos.id_rango', '=', 'cursos.id_rango')*/
+                ->select('empresas.nombreE','ofertas.descripcionP', 'usuarios.nombreU')
+                ->get();
+                return view('miscursos.usuario',[
+                    'aplication'=>$aplication
+                ]);	
     }
 
     /**

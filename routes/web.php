@@ -19,3 +19,4 @@ route::resource('/mis_cursos' , 'miscursosController');
 route::resource('/empresa_', 'empresaController');
 route::resource('/cursos', 'cursoController');
 route::resource('/clases', 'clasesController');
+route::resource('/usuarios', 'usuarioController');
