@@ -17,8 +17,8 @@ Route::get('/', function () {
 
 
 route::resource('/miscursos' , 'miscursosController');
-//route::resource('/misaplicaciones' , 'aplicacionesController');
-//route::resource('/requerimientos' , 'requerimientosController');
+route::resource('/misaplicaciones' , 'aplicacionesController');
+route::resource('/requerimientos' , 'requerimientosController');
 route::resource('/empresa_', 'empresaController');
 route::resource('/cursos', 'cursoController');
 route::resource('/clases', 'clasesController');

@@ -120,16 +120,16 @@
 
                                 <ul class="list-group">
                                     <li class="list-group-item activeA">Puesto</li>
-                                    <li class="list-group-item ">First item</li>
+								<li class="list-group-item ">{{$ofert->puestoO}}</li>
                                     <li class="list-group-item activeA ">Descripcion</li>
-                                    <li class="list-group-item ">Third item</li>
+                                    <li class="list-group-item ">{{$ofert->descripcionP}}</li>
                                 </ul>
                                 <p>
                                     <ul class="list-group">
                                         <li class="list-group-item activeA">Requerimientos</li>
-                                        <li class="list-group-item ">First item</li>
-                                        <li class="list-group-item ">Second item</li>
-                                        <li class="list-group-item ">Third item</li>
+										@foreach($reque as $reque)
+									<li class="list-group-item "><a href="/miscursos">{{$reque->nombreC}}</a></li>
+										@endforeach
                                     </ul>
                                     <p>
                             </div>
@@ -138,24 +138,22 @@
                         <div class="col-lg-6 col-sm-12 float_right">
 						<h3>	
                             <ul class="list-group">
-                                <li class="list-group-item activeA">Empresa</li>
-                                <li class="list-group-item ">First item</li>
-                                <li class="list-group-item ">Second</li>
-                                <li class="list-group-item ">Third item</li>
-                                <li class="list-group-item ">Third item</li>
-                                <li class="list-group-item ">Third item</li>
-                                <li class="list-group-item ">Third item</li>
-                                <li class="list-group-item ">Third item</li>
-                                <li class="list-group-item ">Third item</li>
+                                <li class="list-group-item activeA">{{$empre->nombreE}}</li>
+                                <li class="list-group-item ">{{$empre->correoE}}</li>
+                                <li class="list-group-item ">{{$empre->telefonoE}}</li>
+                                <li class="list-group-item ">{{$empre->municipio}}</li>
+                                <li class="list-group-item ">{{$empre->direccionE}}</li>
 
 							</ul>
 						</h3>
-
+						<button type="button" class="btn btn-primary col-lg-12">Aplicar</button>
                         </div>
 
                     </div>
 
-                </div>
+				</div>
+				
+				
 
                 <!-- Footer Content -->
 
