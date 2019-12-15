@@ -25,7 +25,7 @@ class empresaController extends Controller
                 ->join('rangos', 'rangos.id_rango', '=', 'cursos.id_rango')*/
                 ->select('empresas.nombreE','ofertas.descripcionP', 'usuarios.nombreU')
                 ->get();
-                return view('miscursos.empresa',[
+                return view('empresa',[
                     'ofertas'=>$ofertas
                 ]);	
     }

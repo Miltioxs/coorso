@@ -26,7 +26,7 @@ class miscursosController extends Controller
                 ->join('rangos', 'rangos.id_rango', '=', 'cursos.id_rango')
                 ->select('cursos.nombreC','rangos.rango', 'categorias.categoria', 'cursos.descripcionC', 'caminos.estadoC','cursos.imgCurso', 'cursos.maestro','usuarios.nickU', 'caminos.notaC')
                 ->get();
-                return view('miscursos.miscursos',[
+                return view('miscursos',[
                     'cursos'=>$cursos
                 ]);		
     }

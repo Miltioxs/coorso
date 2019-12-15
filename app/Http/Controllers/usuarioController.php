@@ -25,7 +25,7 @@ class usuarioController extends Controller
                 ->join('rangos', 'rangos.id_rango', '=', 'cursos.id_rango')*/
                 ->select('empresas.nombreE','ofertas.descripcionP', 'usuarios.nombreU','ofertas.puestoO')
                 ->get();
-                return view('miscursos.usuario',[
+                return view('usuario',[
                     'aplicacion'=>$aplicacion
                 ]);	
     }

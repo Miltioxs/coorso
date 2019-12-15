@@ -31,9 +31,9 @@
 			<nav class="main_nav_container">
 				<div class="main_nav">
 					<ul class="main_nav_list">
-						<li class="main_nav_item"><a href="index.html">Inicio</a></li>
+						<li class="main_nav_item"><a href="{{url('/')}}">Inicio</a></li>
 
-						<li class="main_nav_item"><a href="courses.html">Cursos</a></li>
+						<li class="main_nav_item"><a href="{{url('/cursos')}}">Cursos</a></li>
 						<li class="main_nav_item"><a href="ofertas.html">Ofertas laborales</a></li>
 						<!--li class="main_nav_item"><a href="news.html">news</a></li-->
 						<li class="main_nav_item"><a href="contact.html">Contactanos</a></li>
@@ -72,9 +72,9 @@
 		<div class="menu_inner menu_mm">
 			<div class="menu menu_mm">
 				<ul class="menu_list menu_mm">
-					<li class="menu_item menu_mm"><a href="index.html">Inicio</a></li>
+					<li class="menu_item menu_mm"><a href="{{url('/')}}">Inicio</a></li>
 
-					<li class="menu_item menu_mm"><a href="courses.html">Cursos</a></li>
+					<li class="menu_item menu_mm"><a href="{{url('cursos')}}">Cursos</a></li>
 					<li class="menu_item menu_mm"><a href="ofertas.html">Ofertas laborales</a></li>
 
 					<li class="menu_item menu_mm"><a href="contact.html">Contactanos</a></li>
@@ -131,7 +131,7 @@
 
 									<div class="col-lg-4 course_box">
 											<div class="card">
-									<img class="card-img-top" src="images/course_1.jpg" alt="https://unsplash.com/@kellybrito">
+									<img class="card-img-top" src="img/imgCurso.png" alt="https://unsplash.com/@kellybrito">
 									<div class="card-body text-center">
 										<div class="card-title"><a href="courses.html">{{$cursos->nombreC}}</a></div><br>
 										<div class="card-text">{{$cursos->descripcionC}}</div><p><br>

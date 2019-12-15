@@ -15,8 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::resource('/mis_cursos' , 'miscursosController');
+route::resource('/miscursos' , 'miscursosController');
 route::resource('/empresa_', 'empresaController');
 route::resource('/cursos', 'cursoController');
 route::resource('/clases', 'clasesController');
 route::resource('/usuarios', 'usuarioController');
+
+/*route::get('/cursopage', function(){
+    return redirect('/cursos');
+});*/
+
+route::get('/cursos', function(){
+    return view('courses');
+});
+

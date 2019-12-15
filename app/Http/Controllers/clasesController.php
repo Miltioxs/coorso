@@ -24,7 +24,7 @@ class clasesController extends Controller
         ->join('recursos','recursos.id_clase', 'clases.id_clase')
         ->select('cursos.nombreC','clases.tituloC','recursos.urlRecurso')
         ->get();
-        return view('miscursos.clases',[
+        return view('clases',[
             'clases'=>$clases
         ]);	
     }
