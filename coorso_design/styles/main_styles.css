@@ -1007,7 +1007,7 @@ section
 .register_section
 {
 	width: 100%;
-	background: #fbc531;
+	background: #4b4b4b;
 	padding-top: 156px;
 	padding-bottom: 161px;
 }
@@ -1018,6 +1018,7 @@ section
 .register_title
 {
 	color: #FFFFFF;
+	font-family: "Squada One";
 	margin-bottom: 16px;
 	line-height: 1.63;
 }
@@ -1031,7 +1032,7 @@ section
 }
 .register_text
 {
-	color: #FFFFFF;
+	color: #4b4b4b;
 	font-weight: 500;
 	margin-top: 32px;
 	padding-left: 25px;
@@ -1040,7 +1041,7 @@ section
 }
 .register_button
 {
-	background: #1a1a1a;
+	background: #fbc531;
 	margin-top: 65px;
 }
 .register_button a
