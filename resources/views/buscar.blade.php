@@ -142,8 +142,8 @@
                             <form id="search_form" class="search_form" action="{{url('/miscursos')}}">
                                 <input id="search_form_name" class="input_field search_form_name" type="text" placeholder="Nombre del curso" required="required" data-error="Course name is required.">
                                 <input id="search_form_category" class="input_field search_form_category" type="text" placeholder="Categoría">
-                                <input id="search_form_degree" class="input_field search_form_degree" type="text" placeholder="Difucultad">
-                                <button id="search_submit_button" type="submit" class="search_submit_button trans_200" value="Submit">Buscar curso</button>
+                                <input id="search_form_degree" class="input_field search_form_degree" type="text" placeholder="Dificultad">
+                                <button  id="search_submit_button" type="submit" class="search_submit_button trans_200" value="Submit">Buscar curso</button>
                             </form>
                         </div>
                     </div>
