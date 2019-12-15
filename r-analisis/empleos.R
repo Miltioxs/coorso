@@ -150,31 +150,232 @@ ggplot(datanual, aes(x=datanual$year, y=datanual$empleos)) +
 #2001
 a2001 <- trabajos %>%
   select(6,7,8,9,10,11,12,13,14,15,16,17)
-perRama2001 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2001))
+perRama2001 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2001)/1000)
 ap2001<-data.frame(tapply(perRama2001$Empleos, perRama2001$Rama, FUN=sum))
 ap2001<-t(ap2001)
-colnames(ap2001)
+rownames(ap2001) <- NULL
+ap2001 <- ap2001
 
+#2002
+a2002 <- trabajos %>%
+  select(18,19,20,21,22,23,24,25,26,27,28,29)
+perRama2002 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2002)/1000)
+ap2002<-tapply(perRama2002$Empleos, perRama2002$Rama, FUN=sum)
+ap2002<-t(ap2002)
+rownames(ap2002) <- NULL
+ap2002 <- data.frame(ap2002[,-c(1)])
+ap2002 <- t(ap2002)
+rownames(ap2002) <- NULL
+
+#2003
+a2003 <- trabajos %>%
+  select(30,31,32,33,34,35,36,37,38,39,40,41)
+perRama2003 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2003)/1000)
+ap2003<-tapply(perRama2003$Empleos, perRama2003$Rama, FUN=sum)
+ap2003<-t(ap2003)
+rownames(ap2003) <- NULL
+ap2003 <- data.frame(ap2003[,-c(1)])
+ap2003 <- t(ap2003)
+rownames(ap2003) <- NULL
+
+#2004
+a2004 <- trabajos %>%
+  select(42:53)
+perRama2004 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2004)/1000)
+ap2004<-tapply(perRama2004$Empleos, perRama2004$Rama, FUN=sum)
+ap2004<-t(ap2004)
+rownames(ap2004) <- NULL
+ap2004 <- data.frame(ap2004[,-c(1)])
+ap2004 <- t(ap2004)
+rownames(ap2004) <- NULL
+
+#2005
+a2005 <- trabajos %>%
+  select(42:53)
+perRama2005 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2005)/1000)
+ap2005<-tapply(perRama2005$Empleos, perRama2005$Rama, FUN=sum)
+ap2005<-t(ap2005)
+rownames(ap2005) <- NULL
+ap2005 <- data.frame(ap2005[,-c(1)])
+ap2005 <- t(ap2005)
+rownames(ap2005) <- NULL
+
+#2006
+a2006 <- trabajos %>%
+  select(54:65)
+perRama2006 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2006)/1000)
+ap2006<-tapply(perRama2006$Empleos, perRama2006$Rama, FUN=sum)
+ap2006<-t(ap2006)
+rownames(ap2006) <- NULL
+ap2006 <- data.frame(ap2006[,-c(1)])
+ap2006 <- t(ap2006)
+rownames(ap2006) <- NULL
+
+#2007
+a2007 <- trabajos %>%
+  select(66:77)
+perRama2007 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2007)/1000)
+ap2007<-tapply(perRama2007$Empleos, perRama2007$Rama, FUN=sum)
+ap2007<-t(ap2007)
+rownames(ap2007) <- NULL
+ap2007 <- data.frame(ap2007[,-c(1)])
+ap2007 <- t(ap2007)
+rownames(ap2007) <- NULL
+
+#2008
+a2008 <- trabajos %>%
+  select(78:89)
+perRama2008 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2008)/1000)
+ap2008<-tapply(perRama2008$Empleos, perRama2008$Rama, FUN=sum)
+ap2008<-t(ap2008)
+rownames(ap2008) <- NULL
+ap2008 <- data.frame(ap2008[,-c(1)])
+ap2008 <- t(ap2008)
+rownames(ap2008) <- NULL
+
+#2009
+a2009 <- trabajos %>%
+  select(90:101)
+perRama2009 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2009)/1000)
+ap2009<-tapply(perRama2009$Empleos, perRama2009$Rama, FUN=sum)
+ap2009<-t(ap2009)
+rownames(ap2009) <- NULL
+ap2009 <- data.frame(ap2009[,-c(1)])
+ap2009 <- t(ap2009)
+rownames(ap2009) <- NULL
+
+#2010
+a2010 <- trabajos %>%
+  select(102:113)
+perRama2010 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2010)/1000)
+ap2010<-tapply(perRama2010$Empleos, perRama2010$Rama, FUN=sum)
+ap2010<-t(ap2010)
+rownames(ap2010) <- NULL
+ap2010 <- data.frame(ap2010[,-c(1)])
+ap2010 <- t(ap2010)
+rownames(ap2010) <- NULL
+
+#2011
+a2011 <- trabajos %>%
+  select(114:125)
+perRama2011 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2011)/1000)
+ap2011<-tapply(perRama2011$Empleos, perRama2011$Rama, FUN=sum)
+ap2011<-t(ap2011)
+rownames(ap2011) <- NULL
+ap2011 <- data.frame(ap2011[,-c(1)])
+ap2011 <- t(ap2011)
+rownames(ap2011) <- NULL
+
+#2012
+a2012 <- trabajos %>%
+  select(126:137)
+perRama2012 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2012)/1000)
+ap2012<-tapply(perRama2012$Empleos, perRama2012$Rama, FUN=sum)
+ap2012<-t(ap2012)
+rownames(ap2012) <- NULL
+ap2012 <- data.frame(ap2012[,-c(1)])
+ap2012 <- t(ap2012)
+rownames(ap2012) <- NULL
+
+#2013
+a2013 <- trabajos %>%
+  select(138:149)
+perRama2013 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2013)/1000)
+ap2013<-tapply(perRama2013$Empleos, perRama2013$Rama, FUN=sum)
+ap2013<-t(ap2013)
+rownames(ap2013) <- NULL
+ap2013 <- data.frame(ap2013[,-c(1)])
+ap2013 <- t(ap2013)
+rownames(ap2013) <- NULL
+
+
+#2014
+a2014 <- trabajos %>%
+  select(150:161)
+perRama2014 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2014)/1000)
+ap2014<-tapply(perRama2014$Empleos, perRama2014$Rama, FUN=sum)
+ap2014<-t(ap2014)
+rownames(ap2014) <- NULL
+ap2014 <- data.frame(ap2014[,-c(1)])
+ap2014 <- t(ap2014)
+rownames(ap2014) <- NULL
+
+#2015
+a2015 <- trabajos %>%
+  select(162:173)
+perRama2015 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2015)/1000)
+ap2015<-tapply(perRama2015$Empleos, perRama2015$Rama, FUN=sum)
+ap2015<-t(ap2015)
+rownames(ap2015) <- NULL
+ap2015 <- data.frame(ap2015[,-c(1)])
+ap2015 <- t(ap2015)
+rownames(ap2015) <- NULL
+
+#2016
+a2016 <- trabajos %>%
+  select(174:185)
+perRama2016 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2016)/1000)
+ap2016<-tapply(perRama2016$Empleos, perRama2016$Rama, FUN=sum)
+ap2016<-t(ap2016)
+rownames(ap2016) <- NULL
+ap2016 <- data.frame(ap2016[,-c(1)])
+ap2016 <- t(ap2016)
+rownames(ap2016) <- NULL
 
 
 #2017
 a2017 <- trabajos %>%
-  select(198,199,200,201,202,203,204,205,206,207,208,209)
-perRama2017 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2017))
-ap2017<-data.frame(tapply(perRama2017$Empleos, perRama2017$Rama, FUN=sum))
-cat2017<- ap2017 %>% rownames_to_column("id")
-colnames(cat2017) <- c("ramas","empleos")
-cat2017 <- cat2017[-c(1),]
+  select(162:173)
+perRama2017 <- data.frame("Rama" = trabajos$Rama,"Empleos"=rowSums(a2017)/1000)
+ap2017<-tapply(perRama2017$Empleos, perRama2017$Rama, FUN=sum)
+ap2017<-t(ap2017)
+rownames(ap2017) <- NULL
+ap2017 <- data.frame(ap2017[,-c(1)])
+ap2017 <- t(ap2017)
+rownames(ap2017) <- NULL
+
+#unir rows
+compAn <- rbind(ap2001, ap2002[1,],ap2003[1,],ap2004[1,],ap2005[1,],
+                ap2006[1,], ap2007[1,], ap2008[1,], ap2009[1,], 
+                ap2010[1,], ap2011[1,], ap2012[1,], ap2013[1,],
+                ap2014[1,], ap2015[1,], ap2016[1,], ap2017[1,])
+compAn <- t(compAn)
+rownames(compAn) <- NULL
+compAn<-cbind(compAn, c(2001, 2002, 2003, 2004,2005,2006,2007,2008,
+                        2009, 2010, 2011, 2012, 2013, 2014,
+                        2015, 2016, 2017))
+colnames(compAn) <- c("agri", "minas", "industria", "year")
+fram <- data.frame(compAn)
+
+ggplot(fram, aes(x=year)) + 
+  geom_line(aes(y = agri), color = "darkred") + 
+  geom_line(aes(y = minas), color="steelblue") + 
+  geom_line(aes(y = industria), color="yellow") 
 
 
-ggplot()+ geom_histogram(data=perRama2001, 
-                         aes(x=orangeec$Creat.Ind...GDP), 
-                         fill="blue",color="green", 
-                         binwidth = 1)+
-  labs(x="% Aporte de economia naranja al PIB", 
-       y="Cantidad de paises", 
-       title="Contribución  de la economía naranja en LATAM")+
-  theme(legend.position = "none")+
-  theme(panel.background = element_blank(),
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank())
+#------------Dataset estadisticas escolares-------------------
+datosSoya <- data.frame(filter(datos.escolar2017, MUN == 617))
+
+datosSoyaNB <- data.frame("id"=c(1,2,3), "grado" = c("Sin transicion", "Primer bachillerato General", "Primer Bachillerato Tecnico"), "matriculados"=c(((sum(datosSoya$G9_T)- sum(datosSoya$BG1_T)-  sum(datosSoya$BT1_T))/sum(datosSoya$G9_T))*100, (sum(datosSoya$BG1_T)/sum(datosSoya$G9_T))*100, (sum(datosSoya$BT1_T)/sum(datosSoya$G9_T))*100))
+
+blank_theme <- theme_minimal()+
+  theme(
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.border = element_blank(),
+    panel.grid=element_blank(),
+    axis.ticks = element_blank(),
+    plot.title=element_text(size=14, face="bold")
+  )
+
+bp<- ggplot(datosSoyaNB, aes(x="id", y=matriculados, fill=grado)) +
+  geom_bar(stat="identity", width=1) +
+  coord_polar("y", start=0)+ scale_fill_grey() +  blank_theme +
+  theme(axis.text.x=element_blank()) +
+  geom_text(aes(y = matriculados/3 + c(0, cumsum(matriculados)[-length(matriculados)]), 
+                label = (format(round(matriculados, 2), nsmall = 2))), size=3)
+bp
+
+#---------------Variables
+matriculadosU2017 <- 172593
+egresadosBachi <- sum(datos.escolar2017$BG2_T)+sum(datos.escolar2017$BT3_T)+datos.escolar2017$BT4_T)

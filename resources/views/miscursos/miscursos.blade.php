@@ -42,8 +42,15 @@
 			</nav>
 		</div>
 		<div class="header_side d-flex flex-row justify-content-center align-items-center">
-			<img src="images/phone-call.svg" alt="">
-			<span>+503 7939 4606</span>
+			<a href="">
+				
+				@isset($cursos->nickU)
+				{{$cursos->nickU}}
+				@else
+				Login
+				@endisset
+
+			</a>
 		</div>
 
 		<!-- Hamburger -->
@@ -117,19 +124,47 @@
 
 			<div class="row course_boxes">
 				<div class="row">
-					<div class="col">
+					
 						@foreach($cursos as $cursos)
-							
-							{{$cursos->nombreC}}
-							{{$cursos->rango}}
-							{{$cursos->categoria}}
-							{{$cursos->descripcionC}}
-							{{$cursos->estadoC}}
-							
-						@endforeach
 
-						
-					</div>
+							<!-- Popular Course Item -->
+
+									<div class="col-lg-4 course_box">
+											<div class="card">
+									<img class="card-img-top" src="images/course_1.jpg" alt="https://unsplash.com/@kellybrito">
+									<div class="card-body text-center">
+										<div class="card-title"><a href="courses.html">{{$cursos->nombreC}}</a></div><br>
+										<div class="card-text">{{$cursos->descripcionC}}</div><p><br>
+
+											@if($cursos->rango == "Principiante")
+												<div class="card-text verde-g">Dificultad: <h3>{{$cursos->rango}}s</h3></div><br>
+											@elseif($cursos->rango == "Intermedio")
+												<div class="card-text amarillo-g">Dificultad: <h3>{{$cursos->rango}}s</h3></div><br>
+											@else
+												<div class="card-text rojo-g">Dificultad: <h3>{{$cursos->rango}}</h3></div><br>
+											@endif
+
+											@if($cursos->estadoC == 0)
+												<div class="card-text verde-g"><h2>En progreso</h2></div><br>
+											@else
+												<div class="card-text azul-g"><h1>Finalizado
+												</h1></div><br>
+											@endif
+										
+										<div class="card-text">Categoria: <strong>{{$cursos->categoria}}s</strong></div>
+									</div>
+									<div class="price_box d-flex flex-row align-items-center">
+										<div class="course_author_name">{{$cursos->maestro}} <span>Maestro</span></div>
+										@if($cursos->notaC != 0)
+											<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>{{$cursos->notaC}}</span></div>
+										@endif	
+										
+									</div>
+							
+								</div>
+							</div>						
+						@endforeach
+					
 				</div>
 
 				
