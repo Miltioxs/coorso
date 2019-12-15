@@ -28,6 +28,7 @@ class empresaController extends Controller
                 return view('miscursos.empresa',[
                     'ofertas'=>$ofertas
                 ]);	
+    
     }
 
     /**

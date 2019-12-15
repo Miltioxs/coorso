@@ -43,6 +43,10 @@ COLOR PALETTE
 /*********************************
 2. Body and some general stuff
 *********************************/
+.activeA{
+	background-color: #ffb606;
+	color: white;
+}
 
 *
 {
