@@ -125,7 +125,7 @@
 							{{$cursos->categoria}}
 							{{$cursos->descripcionC}}
 							{{$cursos->estadoC}}
-							
+							<img src="img/{{$cursos->imgCurso}}"/>
 						@endforeach
 
 						

@@ -110,7 +110,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="section_title text-center">
-						<h1>Mis cursos</h1>
+						<h1>Aplicaciones del usuario</h1>
 					</div>
 				</div>
 			</div>
@@ -118,12 +118,12 @@
 			<div class="row course_boxes">
 				<div class="row">
 					<div class="col">
-						@foreach($ofertas as $ofertas)
+						@foreach($aplicacion as $aplicacion)
 							
-							{{$ofertas->nombreE}}
-                            {{$ofertas->descripcionP}}
-                            {{$ofertas->nombreU}}
-                            
+							{{$aplicacion->nombreE}}
+                            {{$aplicacion->descripcionP}}
+                            {{$aplicacion->nombreU}}
+                            {{$aplicacion->puestoO}}
 						@endforeach
 
 						
